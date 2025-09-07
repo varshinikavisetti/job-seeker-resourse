@@ -1,52 +1,162 @@
 {
   "resume_templates": [
-    {"title": "Canva Resume Templates", "url": "https://www.canva.com/resumes/templates/"},
-    {"title": "Google Docs Resume Templates", "url": "https://docs.google.com/document/u/0/"},
-    {"title": "Overleaf CV Templates", "url": "https://www.overleaf.com/gallery/tagged/cv"}
+    {"name": "Modern Template", "link": "https://www.canva.com/resumes/templates/"},
+    {"name": "Professional Template", "link": "https://resume.io/resume-templates"},
+    {"name": "Creative Template", "link": "https://novoresume.com/resume-templates"},
+    {"name": "ATS-Friendly Template", "link": "https://enhancv.com/resume-templates"},
+    {"name": "Minimalist Template", "link": "https://kickresume.com/resume-templates/"},
+    {"name": "Executive Template", "link": "https://zety.com/resume-templates"},
+    {"name": "Infographic Template", "link": "https://venngage.com/resume-templates"},
+    {"name": "Fresher Resume", "link": "https://www.myperfectresume.com/resume-templates"},
+    {"name": "One-Page Resume", "link": "https://standardresume.co/"},
+    {"name": "Creative Graphic Resume", "link": "https://creativemarket.com/templates/resumes"}
   ],
-  "job_portals": [
-    {"title": "LinkedIn Jobs", "url": "https://www.linkedin.com/jobs/"},
-    {"title": "Naukri", "url": "https://www.naukri.com/"},
-    {"title": "Indeed", "url": "https://in.indeed.com/"},
-    {"title": "Monster India", "url": "https://www.monsterindia.com/"},
-    {"title": "Glassdoor Jobs", "url": "https://www.glassdoor.co.in/Job/index.htm"},
-    {"title": "TimesJobs", "url": "https://www.timesjobs.com/"},
-    {"title": "Internshala", "url": "https://internshala.com/"},
-    {"title": "SimplyHired", "url": "https://www.simplyhired.co.in/"}
-  ],
-  "courses": [
-    {"title": "Coursera Free Courses", "url": "https://www.coursera.org/"},
-    {"title": "edX Free Courses", "url": "https://www.edx.org/"},
-    {"title": "Udemy Free Courses", "url": "https://www.udemy.com/courses/free/"},
-    {"title": "Khan Academy", "url": "https://www.khanacademy.org/"},
-    {"title": "MIT OpenCourseWare", "url": "https://ocw.mit.edu/index.htm"},
-    {"title": "Harvard Online Courses", "url": "https://online-learning.harvard.edu/catalog/free"},
-    {"title": "Swayam Free Courses (India)", "url": "https://swayam.gov.in/"},
-    {"title": "FutureLearn Free Courses", "url": "https://www.futurelearn.com/courses"}
-  ],
-  "interview_tips": [
-    "Research the company’s background, products, and recent news.",
-    "Prepare for common HR questions such as 'Tell me about yourself', 'Why should we hire you?', 'What are your strengths and weaknesses?', and 'Where do you see yourself in 5 years?'.",
-    "For technical roles, revise Data Structures, Algorithms, and System Design basics.",
-    "Practice coding on platforms like LeetCode, HackerRank, or GeeksforGeeks.",
-    "Dress formally: Men – formal shirt, trousers, shoes; Women – formal top/shirt with trousers or business suit. Avoid flashy colors.",
-    "Be on time — arrive at least 10-15 minutes early.",
-    "Maintain good body language: sit upright, maintain eye contact, and smile politely.",
-    "Do not interrupt the interviewer; listen carefully before answering.",
-    "Be confident but avoid sounding arrogant.",
-    "Keep your phone on silent mode during the interview.",
-    "If you don’t know an answer, admit it politely instead of guessing.",
-    "Prepare 1-2 thoughtful questions to ask the interviewer about the company or role.",
-    "Do’s: Be honest, positive, polite, and concise in your answers.",
-    "Don’ts: Don’t criticize previous employers, don’t lie about skills, don’t fidget or use slang.",
-    "Always end the interview by thanking the interviewer for their time."
-  ],
-  "video_tips": [
-    {"title": "Write an Incredible Resume: 5 Golden Rules!", "url": "https://www.youtube.com/watch?v=Tt08KmFfIYQ"},
-    {"title": "How to Write a Resume That Stands Out", "url": "https://www.youtube.com/watch?v=NcD3nufvA7Y"},
-    {"title": "Tips For How To Write A Better Resume (From A Recruiter's Perspective)", "url": "https://www.youtube.com/watch?v=R3abknwWX7k"},
-    {"title": "Stand Out in a Job Interview | Harvard Business Review", "url": "https://www.youtube.com/watch?v=ZU9x1vFx5lI"},
-    {"title": "JOB INTERVIEW TIPS! (TOP 10 TIPS for PASSING a JOB INTERVIEW!)", "url": "https://www.youtube.com/watch?v=OLM5V_yF9Gs"},
-    {"title": "HOW TO PASS A JOB INTERVIEW IN 2025! (TIPS & SAMPLE ANSWERS)", "url": "https://www.youtube.com/watch?v=7pFjhUSQylI"}
-  ]
+
+  "job_portals": {
+    "government": [
+      {"name": "UPSC", "link": "https://www.upsc.gov.in/"},
+      {"name": "SSC", "link": "https://ssc.nic.in/"},
+      {"name": "State Govt Jobs", "link": "https://www.freejobalert.com/"},
+      {"name": "Bank Jobs", "link": "https://www.bankersadda.com/"},
+      {"name": "Railway Jobs", "link": "https://indianrailways.gov.in/"},
+      {"name": "PSU Jobs", "link": "https://www.psc.gov.in/"},
+      {"name": "Defence Jobs", "link": "https://joinindianarmy.nic.in/"},
+      {"name": "Indian Navy Careers", "link": "https://www.joinindiannavy.gov.in/"},
+      {"name": "ISRO Careers", "link": "https://www.isro.gov.in/careers"}
+    ],
+    "private": [
+      {"name": "Indeed", "link": "https://www.indeed.com/"},
+      {"name": "LinkedIn", "link": "https://www.linkedin.com/jobs/"},
+      {"name": "Monster", "link": "https://www.monster.com/"},
+      {"name": "Naukri", "link": "https://www.naukri.com/"},
+      {"name": "Glassdoor", "link": "https://www.glassdoor.com/Job/index.htm"},
+      {"name": "TimesJobs", "link": "https://www.timesjobs.com/"},
+      {"name": "Shine", "link": "https://www.shine.com/"},
+      {"name": "CareerBuilder", "link": "https://www.careerbuilder.com/"}
+    ],
+    "software_tech": [
+      {"name": "GitHub Jobs", "link": "https://jobs.github.com/"},
+      {"name": "Stack Overflow Jobs", "link": "https://stackoverflow.com/jobs"},
+      {"name": "AngelList (Startups)", "link": "https://angel.co/jobs"},
+      {"name": "HackerRank Jobs", "link": "https://www.hackerrank.com/jobs"},
+      {"name": "LeetCode Jobs", "link": "https://leetcode.com/jobs/"},
+      {"name": "Toptal (Remote)", "link": "https://www.toptal.com/"},
+      {"name": "RemoteOK", "link": "https://remoteok.io/"},
+      {"name": "WeWorkRemotely", "link": "https://weworkremotely.com/"}
+    ],
+    "freelancing": [
+      {"name": "Upwork", "link": "https://www.upwork.com/"},
+      {"name": "Freelancer", "link": "https://www.freelancer.com/"},
+      {"name": "Fiverr", "link": "https://www.fiverr.com/"},
+      {"name": "Guru", "link": "https://www.guru.com/"},
+      {"name": "PeoplePerHour", "link": "https://www.peopleperhour.com/"},
+      {"name": "Truelancer", "link": "https://www.truelancer.com/"}
+    ],
+    "international": [
+      {"name": "USA Jobs (Govt)", "link": "https://www.usajobs.gov/"},
+      {"name": "EuroJobs", "link": "https://www.eurojobs.com/"},
+      {"name": "SEEK (Australia)", "link": "https://www.seek.com.au/"},
+      {"name": "JobStreet (Asia)", "link": "https://www.jobstreet.com/"},
+      {"name": "Bayt (Middle East)", "link": "https://www.bayt.com/"},
+      {"name": "Reed (UK)", "link": "https://www.reed.co.uk/jobs"}
+    ]
+  },
+
+  "courses": {
+    "free": [
+      {"name": "Python for Beginners", "link": "https://www.youtube.com/watch?v=_uQrJ0TkZlc"},
+      {"name": "Excel Essentials", "link": "https://www.coursera.org/learn/excel"},
+      {"name": "Machine Learning Crash Course", "link": "https://developers.google.com/machine-learning/crash-course"},
+      {"name": "Web Development Tutorial", "link": "https://www.youtube.com/watch?v=UB1O30fR-EE"},
+      {"name": "JavaScript Full Course", "link": "https://www.youtube.com/watch?v=PkZNo7MFNFg"},
+      {"name": "Data Structures & Algorithms", "link": "https://www.youtube.com/watch?v=8hly31xKli0"},
+      {"name": "C Programming Basics", "link": "https://www.learn-c.org/"},
+      {"name": "Intro to Cybersecurity", "link": "https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/cybersecurity.html"}
+    ],
+    "paid": [
+      {"name": "Complete Python Bootcamp", "link": "https://www.udemy.com/course/complete-python-bootcamp/"},
+      {"name": "Data Science with Python", "link": "https://www.coursera.org/specializations/data-science-python"},
+      {"name": "Web Development Bootcamp", "link": "https://www.udemy.com/course/the-web-developer-bootcamp/"},
+      {"name": "Advanced Excel & VBA", "link": "https://www.udemy.com/course/microsoft-excel-advanced-excel-vba/"},
+      {"name": "AWS Certified Solutions Architect", "link": "https://www.udemy.com/course/aws-certified-solutions-architect/"},
+      {"name": "Fullstack Web Development", "link": "https://www.coursera.org/specializations/full-stack-web-development"},
+      {"name": "Java Programming Masterclass", "link": "https://www.udemy.com/course/java-the-complete-java-developer-course/"}
+    ],
+    "youtube_tutorials": [
+      {"name": "JavaScript Crash Course", "link": "https://www.youtube.com/watch?v=hdI2bqOjy3c"},
+      {"name": "Excel Tutorial for Beginners", "link": "https://www.youtube.com/watch?v=rwbho0CgEAE"},
+      {"name": "Data Structures & Algorithms in Python", "link": "https://www.youtube.com/watch?v=pkYVOmU3MgA"},
+      {"name": "React JS Full Course", "link": "https://www.youtube.com/watch?v=DLX62G4lc44"},
+      {"name": "Git & GitHub Tutorial", "link": "https://www.youtube.com/watch?v=RGOj5yH7evk"},
+      {"name": "Machine Learning with Python", "link": "https://www.youtube.com/watch?v=7eh4d6sabA0"},
+      {"name": "Django Web Development", "link": "https://www.youtube.com/watch?v=F5mRW0jo-U4"}
+    ],
+    "certifications": [
+      {"name": "AWS Certified Developer", "link": "https://aws.amazon.com/certification/"},
+      {"name": "Google Cloud Professional", "link": "https://cloud.google.com/certification"},
+      {"name": "Microsoft Azure Fundamentals", "link": "https://learn.microsoft.com/en-us/certifications/"},
+      {"name": "Certified Scrum Master (CSM)", "link": "https://www.scrumalliance.org/get-certified"},
+      {"name": "Oracle Certified Java Programmer", "link": "https://education.oracle.com/java-se-certification"},
+      {"name": "Cisco CCNA", "link": "https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/ccna.html"},
+      {"name": "CompTIA Security+", "link": "https://www.comptia.org/certifications/security"}
+    ]
+  },
+
+
+  "interview_tips": {
+    "general": [
+      "Research the company before your interview.",
+      "Prepare for common HR questions.",
+      "Dress professionally: formal for offices, neat casual for startups.",
+      "Arrive 10–15 mins early.",
+      "Bring multiple copies of your resume.",
+      "Maintain good body language and posture.",
+      "Smile and greet confidently."
+    ],
+    "technical": [
+      "Practice coding questions on LeetCode, HackerRank, or Codeforces.",
+      "Review data structures and algorithms.",
+      "Understand the fundamentals of the technology stack required.",
+      "Be ready to explain your projects and internship experiences.",
+      "Prepare for system design questions if applicable.",
+      "Revise DBMS, OS, and Computer Networks basics."
+    ],
+    "behavioral": [
+      "Use STAR method (Situation, Task, Action, Result) for answers.",
+      "Be confident and maintain eye contact.",
+      "Ask thoughtful questions about the company culture or role.",
+      "Show enthusiasm and adaptability for new challenges.",
+      "Highlight teamwork and collaboration experiences.",
+      "Don’t overtalk — keep answers concise."
+    ],
+    "dos_donts": [
+      "Do: Be honest, prepare questions, follow-up with a thank-you email.",
+      "Do: Listen actively and clarify questions when needed.",
+      "Don't: Lie, speak negatively about previous employers, or interrupt the interviewer.",
+      "Don't: Use your phone during the interview or appear distracted.",
+      "Do: Research the interviewer’s background on LinkedIn."
+    ],
+    "hr": [
+      "Prepare for 'Tell me about yourself' with a strong pitch.",
+      "Expect questions on salary expectations—research market rates.",
+      "Be clear about why you want to join the company.",
+      "Know your strengths and weaknesses with real examples.",
+      "Have a story for 'Why should we hire you?'."
+    ],
+    "group_discussion": [
+      "Stay calm and respectful in group discussions.",
+      "Contribute early to make your presence felt.",
+      "Back your points with facts and logic.",
+      "Don’t interrupt others—wait for your turn.",
+      "Encourage quieter members to share their views."
+    ],
+    "aptitude_prep": [
+      "Practice quantitative aptitude daily (Time, Work, Speed, Probability).",
+      "Work on logical reasoning and puzzles.",
+      "Revise basic mathematics (percentages, ratios, averages).",
+      "Solve previous placement papers for practice.",
+      "Improve speed with mock tests."
+    ]
+  }
 }
+

@@ -1,85 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Job Seeker Resource Hub</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Seeker Resource Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-light">
-    <div class="container py-4">
-        <h1 class="text-center mb-5">Job Seeker Resource Website</h1>
+<body>
 
-        <!-- Resume Templates -->
-        <h2 class="mb-3">📄 Resume Templates</h2>
-        <div class="row">
-            {% for item in resources.resume_templates %}
-            <div class="col-md-4 mb-3">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ item.title }}</h5>
-                        <a href="{{ item.url }}" target="_blank" class="btn btn-primary">Visit</a>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-
-        <!-- Job Portals -->
-        <h2 class="mb-3 mt-5">💼 Job Portals</h2>
-        <div class="row">
-            {% for item in resources.job_portals %}
-            <div class="col-md-4 mb-3">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ item.title }}</h5>
-                        <a href="{{ item.url }}" target="_blank" class="btn btn-success">Visit</a>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-
-        <!-- Free Courses -->
-        <h2 class="mb-3 mt-5">🎓 Free Online Courses</h2>
-        <div class="row">
-            {% for item in resources.courses %}
-            <div class="col-md-4 mb-3">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ item.title }}</h5>
-                        <a href="{{ item.url }}" target="_blank" class="btn btn-warning">Visit</a>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-
-        <!-- Interview Tips -->
-        <h2 class="mb-3 mt-5">📝 Interview Tips</h2>
-        <div class="card shadow-sm mb-4">
-            <div class="card-body">
-                <ul class="mb-0">
-                    {% for tip in resources.interview_tips %}
-                    <li>{{ tip }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
-
-        <!-- Video Tips -->
-        <h2 class="mb-3 mt-5">📺 Video Tips</h2>
-        <div class="row">
-            {% for video in resources.video_tips %}
-            <div class="col-md-4 mb-3">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ video.title }}</h5>
-                        <a href="{{ video.url }}" target="_blank" class="btn btn-danger">Watch</a>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
+  <!-- Header -->
+  <header class="bg-primary text-white py-3 shadow-sm mb-4">
+    <div class="container">
+      <h1 class="h3 mb-0">🚀 Job Seeker Resource Portal</h1>
+      <p class="mb-0">Your one-stop hub for jobs, courses, resumes & interview tips</p>
     </div>
+  </header>
+
+  <main class="container mb-5">
+
+    <!-- Resume Templates -->
+    <section class="mb-5">
+      <h2 class="mb-3">Resume Templates</h2>
+      <div class="row">
+        {% for template in resources.resume_templates %}
+        <div class="col-md-4 mb-3">
+          <div class="card hover-card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">{{ template.name }}</h5>
+              <a href="{{ template.link }}" target="_blank" class="btn btn-outline-primary btn-sm mt-2">View Template</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- Job Portals -->
+    <section class="mb-5">
+      <h2 class="mb-3">Job Portals</h2>
+      {% for category, jobs in resources.job_portals.items() %}
+        <h4 class="text-capitalize mt-4">{{ category.replace('_',' ') }}</h4>
+        <div class="row">
+          {% for job in jobs %}
+          <div class="col-md-3 mb-2">
+            <a href="{{ job.link }}" target="_blank" class="btn btn-outline-success w-100">{{ job.name }}</a>
+          </div>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </section>
+
+    <!-- Courses -->
+    <section class="mb-5">
+      <h2 class="mb-3">Courses</h2>
+      {% for type, courses in resources.courses.items() %}
+        <h4 class="text-capitalize mt-3">{{ type.replace('_',' ') }}</h4>
+        <div class="row">
+          {% for course in courses %}
+          <div class="col-md-4 mb-2">
+            <a href="{{ course.link }}" target="_blank" class="btn btn-outline-info w-100">{{ course.name }}</a>
+          </div>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </section>
+
+    <!-- Interview Tips -->
+    <section class="mb-5">
+      <h2 class="mb-3">Interview Tips</h2>
+      {% for section, tips in resources.interview_tips.items() %}
+        <h5 class="mt-2 text-secondary">{{ section.replace('_',' ').title() }}</h5>
+        <ul>
+          {% for tip in tips %}
+          <li>{{ tip }}</li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </section>
+
+  </main>
+
+  <footer class="bg-light text-center py-3 shadow-sm">
+    <p class="mb-0">© 2025 Job Seeker Resource Portal | Made with ❤️</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
